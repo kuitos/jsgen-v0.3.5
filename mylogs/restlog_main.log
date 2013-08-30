@@ -1,0 +1,436 @@
+[2013-08-27 19:42:46.450] [ERROR] angularjs.cn - { [Error: connection closed due to parseError] domainThrown: false, domainBound: [Function] }
+Error: connection closed due to parseError
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:456:53
+    at MongoReply.parseBody (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:70:12)
+    at null.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:430:20)
+    at EventEmitter.emit (events.js:95:17)
+    at null.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:191:13)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\connection.js:384:22)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Socket.<anonymous> (_stream_readable.js:736:14)
+    at Socket.EventEmitter.emit (events.js:92:17)
+[2013-08-27 19:42:46.459] [ERROR] angularjs.cn - { [ReferenceError: req is not defined]
+  domainEmitter: 
+   { domain: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: 10,
+        members: [] },
+     _events: {},
+     _maxListeners: 10,
+     databaseName: 'jsGen',
+     serverConfig: 
+      { domain: [Object],
+        _events: {},
+        _maxListeners: 10,
+        _callBackStore: [Object],
+        _commandsStore: [Object],
+        auth: [Object],
+        _dbStore: [Object],
+        host: '127.0.0.1',
+        port: 27017,
+        options: [Object],
+        internalMaster: true,
+        connected: true,
+        poolSize: 1,
+        disableDriverBSONSizeCheck: false,
+        _used: true,
+        replicasetInstance: null,
+        emitOpen: false,
+        ssl: false,
+        sslValidate: false,
+        sslCA: null,
+        sslCert: undefined,
+        sslKey: undefined,
+        sslPass: undefined,
+        name: '127.0.0.1:27017',
+        _readPreference: null,
+        socketOptions: [Object],
+        logger: [Object],
+        eventHandlers: [Object],
+        _serverState: 'disconnected',
+        _state: [Object],
+        recordQueryStats: false,
+        db: [Circular],
+        dbInstances: [Object],
+        connectionPool: [Object],
+        isMasterDoc: [Object] },
+     options: 
+      { database: 'jsGen',
+        username: undefined,
+        password: undefined,
+        native_parser: true },
+     _applicationClosed: false,
+     slaveOk: false,
+     native_parser: true,
+     bsonLib: 
+      { BSON: [Object],
+        Long: [Object],
+        ObjectID: [Object],
+        DBRef: [Function: DBRef],
+        Code: [Function: Code],
+        Timestamp: [Object],
+        Binary: [Object],
+        Double: [Function: Double],
+        MaxKey: [Function: MaxKey],
+        MinKey: [Function: MinKey],
+        Symbol: [Function: Symbol],
+        promoteLongs: true },
+     bson: { promoteLongs: true },
+     bson_deserializer: 
+      { BSON: [Object],
+        Long: [Object],
+        ObjectID: [Object],
+        DBRef: [Function: DBRef],
+        Code: [Function: Code],
+        Timestamp: [Object],
+        Binary: [Object],
+        Double: [Function: Double],
+        MaxKey: [Function: MaxKey],
+        MinKey: [Function: MinKey],
+        Symbol: [Function: Symbol],
+        promoteLongs: true },
+     bson_serializer: 
+      { BSON: [Object],
+        Long: [Object],
+        ObjectID: [Object],
+        DBRef: [Function: DBRef],
+        Code: [Function: Code],
+        Timestamp: [Object],
+        Binary: [Object],
+        Double: [Function: Double],
+        MaxKey: [Function: MaxKey],
+        MinKey: [Function: MinKey],
+        Symbol: [Function: Symbol],
+        promoteLongs: true },
+     _state: 'connected',
+     pkFactory: 
+      { [Function: ObjectID]
+        index: 0,
+        createPk: [Function: createPk],
+        createFromTime: [Function: createFromTime],
+        createFromHexString: [Function: createFromHexString] },
+     forceServerObjectId: false,
+     safe: false,
+     notReplied: {},
+     isInitializing: true,
+     openCalled: false,
+     commands: [],
+     logger: { error: [Function], log: [Function], debug: [Function] },
+     tag: 1377603425555,
+     eventHandlers: 
+      { error: [],
+        parseError: [],
+        poolReady: [],
+        message: [],
+        close: [] },
+     serializeFunctions: false,
+     raw: false,
+     recordQueryStats: false,
+     retryMiliSeconds: 1000,
+     numberOfRetries: 60,
+     readPreference: undefined },
+  domainThrown: false }
+ReferenceError: req is not defined
+    at c:\Jcode\jsgen\api\user.js:239:25
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\collection.js:953:5
+    at Cursor.nextObject (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\cursor.js:678:5)
+    at commandHandler (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\cursor.js:658:14)
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\db.js:1670:9
+    at Server.Base._callHandler (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\base.js:382:41)
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:472:18
+    at MongoReply.parseBody (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:68:5)
+    at null.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:430:20)
+    at EventEmitter.emit (events.js:95:17)
+[2013-08-27 19:44:19.935] [ERROR] angularjs.cn - { [Error: connection closed due to parseError] domainThrown: false, domainBound: [Function] }
+Error: connection closed due to parseError
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:456:53
+    at MongoReply.parseBody (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:70:12)
+    at null.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:430:20)
+    at EventEmitter.emit (events.js:95:17)
+    at null.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:191:13)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\connection.js:384:22)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Socket.<anonymous> (_stream_readable.js:736:14)
+    at Socket.EventEmitter.emit (events.js:92:17)
+[2013-08-27 19:44:19.938] [ERROR] angularjs.cn - { [ReferenceError: req is not defined]
+  domainEmitter: 
+   { domain: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: 10,
+        members: [] },
+     _events: {},
+     _maxListeners: 10,
+     databaseName: 'jsGen',
+     serverConfig: 
+      { domain: [Object],
+        _events: {},
+        _maxListeners: 10,
+        _callBackStore: [Object],
+        _commandsStore: [Object],
+        auth: [Object],
+        _dbStore: [Object],
+        host: '127.0.0.1',
+        port: 27017,
+        options: [Object],
+        internalMaster: true,
+        connected: true,
+        poolSize: 1,
+        disableDriverBSONSizeCheck: false,
+        _used: true,
+        replicasetInstance: null,
+        emitOpen: false,
+        ssl: false,
+        sslValidate: false,
+        sslCA: null,
+        sslCert: undefined,
+        sslKey: undefined,
+        sslPass: undefined,
+        name: '127.0.0.1:27017',
+        _readPreference: null,
+        socketOptions: [Object],
+        logger: [Object],
+        eventHandlers: [Object],
+        _serverState: 'disconnected',
+        _state: [Object],
+        recordQueryStats: false,
+        db: [Circular],
+        dbInstances: [Object],
+        connectionPool: [Object],
+        isMasterDoc: [Object] },
+     options: 
+      { database: 'jsGen',
+        username: undefined,
+        password: undefined,
+        native_parser: true },
+     _applicationClosed: false,
+     slaveOk: false,
+     native_parser: true,
+     bsonLib: 
+      { BSON: [Object],
+        Long: [Object],
+        ObjectID: [Object],
+        DBRef: [Function: DBRef],
+        Code: [Function: Code],
+        Timestamp: [Object],
+        Binary: [Object],
+        Double: [Function: Double],
+        MaxKey: [Function: MaxKey],
+        MinKey: [Function: MinKey],
+        Symbol: [Function: Symbol],
+        promoteLongs: true },
+     bson: { promoteLongs: true },
+     bson_deserializer: 
+      { BSON: [Object],
+        Long: [Object],
+        ObjectID: [Object],
+        DBRef: [Function: DBRef],
+        Code: [Function: Code],
+        Timestamp: [Object],
+        Binary: [Object],
+        Double: [Function: Double],
+        MaxKey: [Function: MaxKey],
+        MinKey: [Function: MinKey],
+        Symbol: [Function: Symbol],
+        promoteLongs: true },
+     bson_serializer: 
+      { BSON: [Object],
+        Long: [Object],
+        ObjectID: [Object],
+        DBRef: [Function: DBRef],
+        Code: [Function: Code],
+        Timestamp: [Object],
+        Binary: [Object],
+        Double: [Function: Double],
+        MaxKey: [Function: MaxKey],
+        MinKey: [Function: MinKey],
+        Symbol: [Function: Symbol],
+        promoteLongs: true },
+     _state: 'connected',
+     pkFactory: 
+      { [Function: ObjectID]
+        index: 0,
+        createPk: [Function: createPk],
+        createFromTime: [Function: createFromTime],
+        createFromHexString: [Function: createFromHexString] },
+     forceServerObjectId: false,
+     safe: false,
+     notReplied: {},
+     isInitializing: true,
+     openCalled: false,
+     commands: [],
+     logger: { error: [Function], log: [Function], debug: [Function] },
+     tag: 1377603845238,
+     eventHandlers: 
+      { error: [],
+        parseError: [],
+        poolReady: [],
+        message: [],
+        close: [] },
+     serializeFunctions: false,
+     raw: false,
+     recordQueryStats: false,
+     retryMiliSeconds: 1000,
+     numberOfRetries: 60,
+     readPreference: undefined },
+  domainThrown: false }
+ReferenceError: req is not defined
+    at c:\Jcode\jsgen\api\user.js:239:25
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\collection.js:953:5
+    at Cursor.nextObject (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\cursor.js:678:5)
+    at commandHandler (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\cursor.js:658:14)
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\db.js:1670:9
+    at Server.Base._callHandler (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\base.js:382:41)
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:472:18
+    at MongoReply.parseBody (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:68:5)
+    at null.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:430:20)
+    at EventEmitter.emit (events.js:95:17)
+[2013-08-27 20:17:16.944] [ERROR] angularjs.cn - { [RangeError: Maximum call stack size exceeded] domainThrown: true }
+[2013-08-28 14:20:25.929] [ERROR] angularjs.cn - { [Error: connection closed due to parseError] domainThrown: false, domainBound: [Function] }
+Error: connection closed due to parseError
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:456:53
+    at MongoReply.parseBody (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:70:12)
+    at null.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:430:20)
+    at EventEmitter.emit (events.js:95:17)
+    at null.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\connection_pool.js:191:13)
+    at EventEmitter.emit (events.js:98:17)
+    at Socket.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\connection.js:384:22)
+    at Socket.EventEmitter.emit (events.js:95:17)
+    at Socket.<anonymous> (_stream_readable.js:736:14)
+    at Socket.EventEmitter.emit (events.js:92:17)
+[2013-08-28 14:20:25.943] [ERROR] angularjs.cn - { [ReferenceError: req is not defined]
+  domainEmitter: 
+   { domain: 
+      { domain: null,
+        _events: [Object],
+        _maxListeners: 10,
+        members: [] },
+     _events: {},
+     _maxListeners: 10,
+     databaseName: 'jsGen',
+     serverConfig: 
+      { domain: [Object],
+        _events: {},
+        _maxListeners: 10,
+        _callBackStore: [Object],
+        _commandsStore: [Object],
+        auth: [Object],
+        _dbStore: [Object],
+        host: '127.0.0.1',
+        port: 27017,
+        options: [Object],
+        internalMaster: true,
+        connected: true,
+        poolSize: 1,
+        disableDriverBSONSizeCheck: false,
+        _used: true,
+        replicasetInstance: null,
+        emitOpen: false,
+        ssl: false,
+        sslValidate: false,
+        sslCA: null,
+        sslCert: undefined,
+        sslKey: undefined,
+        sslPass: undefined,
+        name: '127.0.0.1:27017',
+        _readPreference: null,
+        socketOptions: [Object],
+        logger: [Object],
+        eventHandlers: [Object],
+        _serverState: 'disconnected',
+        _state: [Object],
+        recordQueryStats: false,
+        db: [Circular],
+        dbInstances: [Object],
+        connectionPool: [Object],
+        isMasterDoc: [Object] },
+     options: 
+      { database: 'jsGen',
+        username: undefined,
+        password: undefined,
+        native_parser: true },
+     _applicationClosed: false,
+     slaveOk: false,
+     native_parser: true,
+     bsonLib: 
+      { BSON: [Object],
+        Long: [Object],
+        ObjectID: [Object],
+        DBRef: [Function: DBRef],
+        Code: [Function: Code],
+        Timestamp: [Object],
+        Binary: [Object],
+        Double: [Function: Double],
+        MaxKey: [Function: MaxKey],
+        MinKey: [Function: MinKey],
+        Symbol: [Function: Symbol],
+        promoteLongs: true },
+     bson: { promoteLongs: true },
+     bson_deserializer: 
+      { BSON: [Object],
+        Long: [Object],
+        ObjectID: [Object],
+        DBRef: [Function: DBRef],
+        Code: [Function: Code],
+        Timestamp: [Object],
+        Binary: [Object],
+        Double: [Function: Double],
+        MaxKey: [Function: MaxKey],
+        MinKey: [Function: MinKey],
+        Symbol: [Function: Symbol],
+        promoteLongs: true },
+     bson_serializer: 
+      { BSON: [Object],
+        Long: [Object],
+        ObjectID: [Object],
+        DBRef: [Function: DBRef],
+        Code: [Function: Code],
+        Timestamp: [Object],
+        Binary: [Object],
+        Double: [Function: Double],
+        MaxKey: [Function: MaxKey],
+        MinKey: [Function: MinKey],
+        Symbol: [Function: Symbol],
+        promoteLongs: true },
+     _state: 'connected',
+     pkFactory: 
+      { [Function: ObjectID]
+        index: 0,
+        createPk: [Function: createPk],
+        createFromTime: [Function: createFromTime],
+        createFromHexString: [Function: createFromHexString] },
+     forceServerObjectId: false,
+     safe: false,
+     notReplied: {},
+     isInitializing: true,
+     openCalled: false,
+     commands: [],
+     logger: { error: [Function], log: [Function], debug: [Function] },
+     tag: 1377670731886,
+     eventHandlers: 
+      { error: [],
+        parseError: [],
+        poolReady: [],
+        message: [],
+        close: [] },
+     serializeFunctions: false,
+     raw: false,
+     recordQueryStats: false,
+     retryMiliSeconds: 1000,
+     numberOfRetries: 60,
+     readPreference: undefined },
+  domainThrown: false }
+ReferenceError: req is not defined
+    at c:\Jcode\jsgen\api\user.js:239:25
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\collection.js:953:5
+    at Cursor.nextObject (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\cursor.js:678:5)
+    at commandHandler (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\cursor.js:658:14)
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\db.js:1670:9
+    at Server.Base._callHandler (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\base.js:382:41)
+    at c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:472:18
+    at MongoReply.parseBody (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js:68:5)
+    at null.<anonymous> (c:\Jcode\jsgen\node_modules\mongoskin\node_modules\mongodb\lib\mongodb\connection\server.js:430:20)
+    at EventEmitter.emit (events.js:95:17)
